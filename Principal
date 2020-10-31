@@ -1,0 +1,30 @@
+
+
+def response(entrada):
+
+    # utilizar um algoritmo de classificação
+    # de texto para permitir entradas não pre programadas
+
+    X = [["oi"],["ola"],["e ai"],["tchau"],["ja vou"],["ate logo"]]
+    y = [["oi"],["oi"],["oi"],["tchau"],["tchau"],["tchau"]]
+
+    if entrada == "oi":
+        saida = "oi"
+    elif entrada == "ola":
+        saida = "oi"
+    elif entrada == "e ai":
+        saida = "oi"
+    elif entrada == "tchau":
+        saida = "tchau"
+    elif entrada == "ja vou":
+        saida = "tchau"
+    elif entrada == "ate logo":
+        saida = "tchau"
+    else:
+        saida = "não entendi"
+
+    return saida
+
+while True:
+    entrada = input("usuario: ")
+    print("chatbot:{}".format(response(entrada)))
